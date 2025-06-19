@@ -1,0 +1,89 @@
+---
+title: "Wie ich diese Website entwickelt habe"
+date: "2024-12-01"
+description: "Ein Blick hinter die Kulissen: Wie ich meine Website entwickelt habe und welche Technologien ich auf dem Weg gelernt habe."
+tags: [Webentwicklung, Programmierung]
+---
+
+## Die Anfänge
+
+Meine erste Website habe ich im Sommer 2017 mit 11 Jahren entwickelt. Damals hatte ich kaum Programmiererfahrung – außer ein paar simplen Projekten in [Scratch](https://scratch.mit.edu/). Deshalb nutzte ich einen Website-Baukasten, um meine ersten Schritte im Webdesign zu machen.
+
+<ImageWithCaption file="erste-website-header.avif" caption="Meine Rechtschreibung hat sich seitdem ein wenig verbessert..." attribution="© Felix Orosz"/>
+
+Nebenbei experimentierte ich mit einfachen Bildbearbeitungsprogrammen wie [Paint.NET](https://getpaint.net/) und gestaltete hobbymäßig einfache Logos.
+
+## Fortschritt
+
+Im Jahr 2020, während der [COVID-19-Lockdowns](https://www.dw.com/de/chronologie-ausbreitung-des-coronavirus-in-deutschland/a-58003172), begann ich, Python zu lernen. Bald darauf interessierte ich mich für die Entwicklung von GUIs (grafischen Benutzeroberflächen) mit [Tkinter](https://docs.python.org/3/library/tkinter.html).
+
+Darüber hinaus entwickelte ich Python-basierte Bots für die Instant-Messaging-Plattform *Discord*. Diese interagierten beispielsweise mit APIs, um Informationen anzuzeigen, oder unterstützten die Moderation von Chats.
+
+Später entdeckte ich [Flask](https://flask.palletsprojects.com/en/stable/), ein Framework, mit dem sich unkompliziert Websites erstellen lassen. Da ich zuvor schon Grundkenntnisse in HTML hatte, fiel mir der Einstieg leicht. Mit der Zeit lernte ich auch CSS und beherrschte es schließlich so gut, dass ich auf [SASS](https://sass-lang.com/) umstieg, eine erweiterte Stylesheet-Sprache, die das Webdesign deutlich erleichtert.
+
+Bis Anfang 2023 nutzte ich diese Technologien, um meine eigene Homepage zu gestalten:
+
+<ImageWithCaption file="website-anfang-2023.avif" caption="Meine frühere Website Anfang 2023" attribution="© Felix Orosz"/>
+
+Doch dieser Tech-Stack – bestehend aus Python, Flask, Jinja2 und „klassischem“ CSS – stieß bald an seine Grenzen. Für alles, was über einfache Websites hinausging, war die Kombination zu umständlich. Besonders interaktive Features mit JavaScript und eine saubere Organisation von Komponenten wie Navigationsleisten oder Buttons waren schwer umzusetzen, insbesondere bei mittelgroßen oder größeren Projekten.
+
+Also musste ein neuer Ansatz her ...
+
+## Entwicklung mit modernen Tools
+
+Ende 2023 wagte ich den Schritt zu einem moderneren Tech-Stack und begann, [React](https://react.dev/), [Next.js](https://nextjs.org/) und [Tailwind CSS](https://tailwindcss.com/) zu nutzen. Kurz darauf fügte ich [TypeScript](https://www.typescriptlang.org/) hinzu.
+
+Hier ein kurzer Überblick über die eingesetzten Technologien:
+
+- **TypeScript** ist eine auf *JavaScript* basierende Skriptsprache, die mit statischen Typen arbeitet und so die Codequalität und Sicherheit verbessert.
+- **Next.js** ist ein Webframework, das moderne Websites effizient rendert und für schnelle Ladezeiten optimiert ist.
+- **React** ermöglicht die Erstellung wiederverwendbarer Komponenten, die das Strukturieren und Entwickeln komplexer Webanwendungen erleichtern.
+- **Tailwind CSS** vereinfacht die Arbeit mit CSS durch eine Utility-First-Philosophie. Statt komplizierter Stylesheets genügt eine einfache Klassendeklaration wie:
+
+Beispiel einer React-Komponente:
+
+```tsx
+function Video({ video }: { video: Video }) {
+  return (
+    <div>
+      <Thumbnail video={video} />
+      <a href={video.url}>
+        <h3>{video.title}</h3>
+        <p>{video.description}</p>
+      </a>
+      <LikeButton video={video} />
+    </div>
+  );
+}
+```
+
+In dem nachfolgenden Codeblock wird festgelegt, dass der Text groß (`lg`) und fett (`font-bold`) dargestellt wird. Der Abstand nach unten beträgt `8` Einheiten (`mb-8`).
+
+```css
+text-lg font-bold mb-8
+```
+
+Zusätzlich verwende ich [MDX](https://mdxjs.com/) für diesen Blog. MDX basiert auf Markdown, erweitert es jedoch um Funktionen wie React-Komponenten und Plugins. Ein typisches Markdown-Beispiel:
+
+```md
+# Das ist ein Titel
+## ...Untertitel...
+### usw...
+
+Dieser Text ist **fett**, *kursiv* oder `ein Quellcode`.
+
+[Hier ist ein Link](https://example.com)
+```
+
+Zur Verwaltung von Bibliotheken setze ich auf [Bun](https://bun.sh/), eine extrem effiziente Alternative zum standardmäßigen Paketmanager *npm*.
+
+## Domain
+
+Wie kam ich auf den Domain-Namen *frost.cat*?
+
+Die Antwort ist weniger spektakulär: Nach langer Recherche und zahlreichen Vergleichen stieß ich auf die Domain, die überraschenderweise noch verfügbar war. 
+
+## Fazit
+
+Mit diesem ersten Blogbeitrag wollte ich einen kleinen Einblick hinter die Kulissen meiner Website geben. Ich hoffe, er inspiriert andere Entwickler, die genannten Technologien selbst auszuprobieren.
+

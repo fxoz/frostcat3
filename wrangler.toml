@@ -1,0 +1,8 @@
+name = "frostflare"
+compatibility_date = "2025-06-19"
+
+[build]
+command = "bun run build"
+
+[site]
+bucket = ".vercel/output/static"

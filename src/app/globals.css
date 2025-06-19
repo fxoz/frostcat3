@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@config "../../tailwind.config.ts";
+
+body,
+* {
+  cursor: url('/assets/design/cursors/cursor.png'), auto;
+}
+
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+blockquote,
+table,
+pre {
+  cursor: url('/assets/design/cursors/text.png'), auto;
+}
+
+button,
+button *,
+a,
+a *,
+input,
+input * {
+  cursor: url('/assets/design/cursors/pointer.png'), auto !important;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('/assets/design/background-noise-pattern.avif');
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-blend-mode: overlay;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+main {
+  @apply p-4 py-12
+}
+
+hr {
+  @apply opacity-30 w-96 mx-auto my-8
+}
+
+h1 {
+  @apply text-4xl font-bold mb-8;
+}
+
+h2 {
+  @apply text-3xl font-semibold mt-12 mb-4
+}
+
+h3 {
+  @apply text-xl font-semibold my-4
+}
+
+h4 {
+  @apply text-lg font-semibold mt-6 mb-3
+}
+
+blockquote {
+  @apply opacity-90 px-4 border-l-4 border-c-primary bg-c-primary-ghost
+}
+
+ul {
+  padding-block: 1rem;
+  padding-left: 2em;
+  list-style-type: disc;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: underline;
+  transition-duration: 200ms;
+}
+
+a:hover {
+  @apply text-c-primary
+}
+
+a:active {
+  @apply scale-95
+}
+
+::selection {
+  @apply bg-c-selection
+}
+
+p > code {
+  @apply bg-c-primary-shade rounded-full px-1 text-ctp-mauve
+}
+
+article p {
+  @apply leading-loose text-lg
+}
+
+article p > img {
+  @apply py-6 rounded-lg
+}
+
+li {
+  @apply mb-2 leading-loose;
+}
+
+article > li {
+  @apply mb-4 leading-loose;
+}
+
+article p {
+  @apply py-4
+}
+
+/* 
+a[target="_ blank"], a[target="_blank"] {
+  @apply relative mr-2
+}
+
+a[target="_ blank"]::after, a[target="_blank"]::after {
+  content: "➝";
+  @apply absolute bottom-2 -right-[14px] opacity-40 -rotate-45 text-sm
+} */
+
+pre {
+  @apply bg-[#24273a] rounded-lg p-4 my-4 opacity-90
+}
+
+table {
+  @apply border-collapse my-2
+}
+
+table td, th {
+  @apply px-4 py-2 border-c-primary-shade border-2
+}
+
+table th {
+  @apply font-bold text-left bg-c-primary-ghost
+}
+
+table tr:nth-child(even) {
+  @apply bg-c-primary-soul
+}
