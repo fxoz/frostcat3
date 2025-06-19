@@ -1,6 +1,6 @@
 import { titleFont } from "@/helpers/fonts";
 import type { BlogPost } from "@/types/blog";
-import { getRelativeTime } from "@/helpers/time";
+import { getAbsoluteTime, getRelativeTime } from "@/helpers/time";
 
 export default function BlogPostHeader({ post }: { post: BlogPost }) {
   return (
@@ -10,7 +10,7 @@ export default function BlogPostHeader({ post }: { post: BlogPost }) {
       </h1>
       <p className="mt-2 text-lg opacity-90">{post.metadata.description}</p>
       <p className="opacity-60 py-0">
-        {getRelativeTime(post.metadata.date)} - Felix Orosz
+        {getAbsoluteTime(post.metadata.date)} - Felix Orosz
       </p>
     </div>
   );

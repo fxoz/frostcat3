@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "bunx next dev --port 9966",
-    "build": "bunx next build && bunx @cloudflare/next-on-pages --experimental-minify",
-    "deploy": "bunx wrangler pages deploy .vercel/output/static --project-name=frostflare ",
-    "lint": "next lint"
+    "dev": "next dev --port 9966",
+    "build": "next build",
+    "lint": "next lint",
+    "pages:build": "bunx @cloudflare/next-on-pages"
   },
   "dependencies": {
     "@mdx-js/react": "3.1.0",

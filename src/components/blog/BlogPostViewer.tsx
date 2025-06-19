@@ -9,7 +9,6 @@ import BlogPostToolbar from "./BlogPostToolbar";
 import BlogPostHeader from "./BlogPostHeader";
 
 export default function BlogPostViewer({ post }: { post: BlogPost }) {
-  console.log(`Rendering ${post.slug}`);
   return (
     <article>
       <BlogPostHeader post={post} />
