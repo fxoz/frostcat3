@@ -7,7 +7,7 @@ import path from 'node:path';
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  // output: "export",
+  output: "export",
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
@@ -17,6 +17,7 @@ const nextConfig = {
   },
   transpilePackages: ['next-mdx-remote'],
   images: {
+    unoptimized: true, // TODO! Presumably better for static
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
