@@ -26,7 +26,7 @@ export default function LegalRepresentative() {
       </p>
 
       <p>Mobil: &nbsp; +49 151 29075260</p>
-      <p>E-Mail: &nbsp; legal@frost.cat</p>
+      <p>E-Mail: &nbsp; legal@felixorosz.de</p>
     </div>
   );
 }

@@ -9,7 +9,7 @@ import { Inter } from "next/font/google";
 const fontInter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "frost.cat",
+  title: "felixorosz.de",
   description: "Website & Blog von Felix Orosz",
 };
 

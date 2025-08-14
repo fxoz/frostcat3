@@ -1,3 +1,5 @@
+export const runtime = 'nodejs';
+
 import { notFound } from "next/navigation";
 import { getPostBySlug } from "@/helpers/posts";
 import { generateMetadataForBlogPost } from "./seo";
@@ -5,7 +7,6 @@ import BlogPostViewer from "@/components/blog/BlogPostViewer";
 
 import "@/styles/highlightjs/catppuccin.css";
 
-export const runtime = 'edge';
 
 export async function generateMetadata({
   params,

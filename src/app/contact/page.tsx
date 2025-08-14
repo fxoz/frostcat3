@@ -10,12 +10,8 @@ export default function ContactPage() {
         E-Mail</h2>
       <div className="space-y-4">
         <p>
-          <b>Seriöse Anfragen </b>
-          <Link href="mailto:mail@felixorosz.de">mail@felixorosz.de</Link>
-        </p>
-        <p>
           <b>Allgemein </b>
-          <Link href="mailto:hi@frost.cat">hi@frost.cat</Link>
+          <Link href="mailto:mail@felixorosz.de">mail@felixorosz.de</Link>
         </p>
         <p>
           <b>Rechtliches </b>
@@ -29,15 +25,8 @@ export default function ContactPage() {
         <p>
           <IconBrandLinkedin className="inline mr-2 align-top stroke-c-primary-light" size={24} />
           <b>LinkedIn</b>{" "}
-          <Link href="https://www.linkedin.com/in/felix-orosz-88b075356" target="_blank">
+          <Link href="https://www.linkedin.com/in/fxoz" target="_blank">
             Felix Orosz
-          </Link>
-        </p>
-        <p>
-          <IconBrandBluesky className="inline mr-2 align-top stroke-c-primary-light" size={24} />
-          <b>Bluesky</b>{" "}
-          <Link href="https://bsky.app/profile/frost.cat" target="_blank">
-            @frost.cat
           </Link>
         </p>
         <p>

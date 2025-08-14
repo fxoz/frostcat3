@@ -1,4 +1,5 @@
-# `frost.cat`
+# `felixorosz.de`
+
 ```
 My personal homepage, version 3
 (c) 2024-2025 Felix Orosz

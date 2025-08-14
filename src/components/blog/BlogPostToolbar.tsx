@@ -1,3 +1,5 @@
+export const runtime = 'nodejs';
+
 import Link from "next/link";
 import type { BlogPost } from "@/types/blog";
 import type { IconProps } from "@tabler/icons-react";
@@ -25,10 +27,10 @@ function ShareIconLink({ href, icon: Icon, title }: {
 }
 
 export default function BlogPostToolbar({ post }: { post: BlogPost }) {
-  const url = `https://frost.cat/blog/${post.slug}`;
+  const url = `https://felixorosz.de/blog/${post.slug}`;
 
   const blueskyTextEncoded = encodeURIComponent(
-    `"${post.metadata.title}" ${url} @frost.cat`,
+    `"${post.metadata.title}" ${url}`,
   );
 
   const twitterTextEncoded = encodeURIComponent(

@@ -12,15 +12,16 @@ export default function Home() {
           <PortraitAndName />
           <div>
             <p className="text-left p-4 leading-relaxed">
-              Hallo! Mein Name ist Felix Orosz, und ich bin ein begeisterter
-              Programmierer mit einer großen Leidenschaft für Technik. Seit 2022
-              sammle ich Erfahrungen als Full Stack Webentwickler. Ende 2024
+              Hallo! Mein Name ist Felix Orosz. Seit ich 13 Jahre alt bin,
+              begeistere ich mich für das Programmieren
+              und habe eine große Leidenschaft für Technik. Seit 2022
+              sammle ich praktische Erfahrungen als Full-Stack-Webentwickler. Ende 2024
               habe ich mein Informatikstudium an der{" "}
               <Link
                 href="https://www.hs-niederrhein.de/startseite/"
                 target="_blank"
               >
-                HSNR
+                Hochschule Niederrhein
               </Link>{" "}
               in Krefeld (NRW) begonnen.
             </p>
@@ -31,7 +32,7 @@ export default function Home() {
                   Blog
                 </HeroButton>
               </Link>
-              <Link href="https://www.linkedin.com/in/felix-orosz-88b075356/" target="_blank">
+              <Link href="https://www.linkedin.com/in/fxoz" target="_blank">
                 <HeroButton>
                   <IconBrandLinkedin className="mr-2" />
                   LinkedIn

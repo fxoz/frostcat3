@@ -13,7 +13,6 @@ export default function Skills() {
       </p>
       <div className="flex gap-6 flex-col lg:flex-row mb-8">
         <SkillSet level={SkillSetLevels.NOOB}>
-          <SkillSetItem category={SkillCategory.CODE}>C/C++ 📙</SkillSetItem>
           <SkillSetItem category={SkillCategory.CODE}>Go</SkillSetItem>
           <SkillSetItem category={SkillCategory.CODE}>Kotlin</SkillSetItem>
           <SkillSetItem category={SkillCategory.DATABASE}>SQL 📗</SkillSetItem>
@@ -28,6 +27,7 @@ export default function Skills() {
           </SkillSetItem>
         </SkillSet>
         <SkillSet level={SkillSetLevels.INTERMEDIATE}>
+          <SkillSetItem category={SkillCategory.CODE}>C++ 📙</SkillSetItem>
           <SkillSetItem category={SkillCategory.CODE}>Java 📗</SkillSetItem>
           <SkillSetItem category={SkillCategory.CODE}>
             JavaScript & TS 💼
@@ -64,15 +64,15 @@ export default function Skills() {
         auszubauen:
       </p>
       <ul>
-        <li>Elektrotechnik & Mikrocontroller-Programmierung</li>
-        <li>CI/CD und Docker</li>
-        <li>Git CLI, fortgeschrittenes Versionsmanagement</li>
-        <li>Rust & C++</li>
-        <li>Go (v.A. für APIs)</li>
-        <li>Kotlin (für App-Entwicklung)</li>
-        <li>3D Druck & Modellierung</li>
-        <li>Adobe Creative Suite</li>
         <li>Cyber Security</li>
+        <li>CI/CD und Docker</li>
+        <li>Rust</li>
+        <li>Go (v.A. für APIs)</li>
+        <li>Git CLI, fortgeschrittenes Versionsmanagement</li>
+        <li>Kotlin (für App-Entwicklung)</li>
+        <li>Adobe Creative Suite</li>
+        <li>3D Druck & Modellierung</li>
+        <li>Elektrotechnik & Mikrocontroller-Programmierung</li>
       </ul>
     </section>
   );

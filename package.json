@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 9966",
+    "dev": "next dev --turbo --port 9966",
     "build": "next build",
     "lint": "next lint",
     "pages:build": "bunx @cloudflare/next-on-pages"
@@ -16,7 +16,7 @@
     "eslint-config-next": "^15.2.1",
     "gray-matter": "4.0.3",
     "install": "0.13.0",
-    "next": "^15.2.1",
+    "next": "^15.4.6",
     "next-mdx-remote": "5.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
