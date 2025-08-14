@@ -1,19 +1,23 @@
-export const runtime = 'nodejs';
-
 import { notFound } from "next/navigation";
-import { getPostBySlug } from "@/helpers/posts";
-import { generateMetadataForBlogPost } from "./seo";
+import { getAllPosts, getPostBySlug } from "@/helpers/posts";
 import BlogPostViewer from "@/components/blog/BlogPostViewer";
-
 import "@/styles/highlightjs/catppuccin.css";
+import { generateMetadataForBlogPost } from "./seo";
 
+export const dynamicParams = false;
+
+export async function generateStaticParams() {
+  const posts = await getAllPosts();
+  return posts.map((p) => ({ slug: p.slug }));
+}
 
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  await generateMetadataForBlogPost({ params });
+  const { slug } = await params;
+  return generateMetadataForBlogPost({ params: { slug } });
 }
 
 export default async function BlogPostPage({
@@ -23,10 +27,7 @@ export default async function BlogPostPage({
 }) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
-
-  if (!post) {
-    return notFound();
-  }
+  if (!post) return notFound();
 
   return (
     <main>
