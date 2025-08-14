@@ -6,9 +6,12 @@ import type { BlogPost } from "@/types/blog";
 
 const postsDirectory = path.join(process.cwd(), "src/app/blog/posts");
 
-async function isValidSlug(slug: string): Promise<boolean> {
+function isValidSlug(slug: string): boolean {
   const sanitized = sanitize(slug);
-  return sanitized === slug && !path.isAbsolute(slug);
+  if (sanitized !== slug) return false;
+  if (path.isAbsolute(slug)) return false;
+  if (slug.includes("..") || slug.includes("/") || slug.includes("\\")) return false;
+  return true;
 }
 
 export async function getAllPosts(): Promise<BlogPost[]> {
