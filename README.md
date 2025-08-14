@@ -1,7 +1,7 @@
 # `felixorosz.de`
 
 ```
-My personal homepage, version 3
+My personal homepage, version 4
 (c) 2024-2025 Felix Orosz
 ```
 
@@ -14,6 +14,8 @@ Technologies:
 - MDX (Remark, Rehype)
 
 ## Get Started
+
+Clone, then run the project using `bun`:
 
 ```
 bun i
