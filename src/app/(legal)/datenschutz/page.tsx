@@ -118,24 +118,9 @@ export default function PrivacyPage() {
           https://www.cloudflare.com/cloudflare_customer_SCCs-German.pdf
         </a>
       </p>
-      <h2>Server Hosting</h2>
-      <h3>Contabo GmbH</h3>
+      <br />
       <p>
-        <a
-          href="https://contabo.com/de/legal/impressum/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Impressum
-        </a>
-        &nbsp;
-        <a
-          href="https://contabo.com/de/legal/privacy/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Datenschutz
-        </a>
+        Hinweis: seit dem 15. August 2025 verwendet diese Website keinen eigenständigen bzw. dezidierten Server-Hoster mehr, sondern lediglich Cloudflare Pages.
       </p>
     </main>
   );
