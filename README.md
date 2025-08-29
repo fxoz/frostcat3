@@ -1,17 +1,16 @@
 # `felixorosz.de`
 
-```
-My personal homepage, version 3
-(c) 2024-2025 Felix Orosz
-```
+**Note** - *frost.cat* used to be my domain name, thus the odd repository title
 
-Technologies:
+## Technologies
+
 - Bun
 - React
 - Next.js
 - TypeScript
 - Tailwind CSS
 - MDX (Remark, Rehype)
+- Cloudflare Pages (for hosting, CDN & DNS)
 
 ## Get Started
 
