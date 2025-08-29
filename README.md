@@ -1,7 +1,7 @@
 # `felixorosz.de`
 
 ```
-My personal homepage, version 4
+My personal homepage, version 3
 (c) 2024-2025 Felix Orosz
 ```
 
